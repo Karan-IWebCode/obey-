@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Obey</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <Header class="block3 container reveal  mt-5">
+        <div class="d-flex justify-content-between">
+            <img src="./assets/Logo.svg" alt="Logo">
+            <img  class="hug" src="./assets/hamber.png" alt="">
+        </div>
+    </Header>
+
+    <!-- First Section -->
+   <div></div>
+   <section class=" reveal block">
+    
+    <div class="d-flex justify-content-between" style="position:relative">
+        <h1 class="heroHeading moveright" id="moveright" style="right: 100vw;position: absolute;">WEB</h1>
+        <img class=""  src="./assets/Sphere.png" style="z-index: 20;margin: 0 auto;"alt="Main image">
+        <h2 class="move heroHeading d-flex align-items-end" id="move" style="left: 100vw; bottom:0; position:absolute;">DESIGN</h2>
+    </div>
+    
+   </section>
+
+    <!-- 2nd Section -->
+   <section class="container reveal block bgClass">
+    <div class="row d-flex flex-column-reverse flex-md-row justify-content-md-between h-100">
+        <div class="col-12 col-md-5 d-flex align-items-end "><img class="w-100" src="./assets/replaced.png" alt="Main image"></div>
+
+        <div class="col-12 col-md-5 d-flex align-items-end text-center text-md-start">
+            <h1 class="fontPro">We elevate cohesive brands through community narratives and diversified identities</h1>
+        </div>
+    </div>
+   </section>
+
+   <!-- 3rd Section -->
+   <section class="container block reveal">
+    <div class="row d-flex flex-column flex-md-row justify-content-between">
+        <div class="col-12 col-md-5 d-flex align-items-center text-center text-md-start">
+            <h1 class="fontPro">We elevate cohesive brands through community narratives and diversified identities</h1>
+        </div>
+        <div class="col-12 col-md-6 text-center "><img class="w-100" src="./assets/thirdSection.png" alt="Main image"></div>
+    </div>
+    </section>
+  
+   <!-- 4th Section -->
+   <section class="container block reveal">
+    <div class="row d-flex flex-column-reverse flex-md-row justify-content-between">
+        <div class="col-12 col-md-6 text-center "><img class="w-100" src="./assets/fourthSection.png" alt="Main image"></div>
+
+        <div class="col-12 col-md-5 d-flex align-items-center text-center text-md-start">
+            <h1 class="fontPro">We elevate cohesive brands through community narratives and diversified identities</h1>
+        </div>
+    </div>
+    </section>
+
+    <!-- 5th Section -->
+   <section class="container block5 reveal">
+    <div class="row d-flex flex-column flex-md-row justify-content-between">
+        <div class="col-12 col-md-5 d-flex align-items-center text-center text-md-start">
+            <h1 class="fontPro">We elevate cohesive brands through community narratives and diversified identities</h1>
+        </div>
+        <div class="col-12 col-md-6 text-center "><img class="w-100" src="./assets/fifthSection.png" alt="Main image"></div>
+    </div>
+    </section>
+
+    <!-- 6th Section -->
+    <section class="block6 bgSecondary reveal">
+        <div class="row d-flex justify-content-between blackbox">
+            
+            <div class=" text-center "><img class="" src="./assets/SixthSection.png" alt="Main image"></div>
+        </div>
+    </section>
+
+    <!-- 7th Section -->
+    <section class="container block7 reveal ">
+        <div class="row d-flex text-center">
+            <h1 class="fontSec fontPad">Let’s smash digital expectations - across the channels</h1>
+            
+            <div class=" text-center wrapper">
+                <div class="outer-btn"></div>
+                <button class="buttonClass">Come Say HI</button>
+                    
+                <!-- <img src="./assets/seventh.png" alt="Main image"></div> -->
+        </div>
+    </section>
+
+     <!-- 8th Section -->
+     <footer class="block2">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <img  class="size1" src="./assets/Vector.svg" alt="">
+            <img  class="size2" src="./assets/Vector-1.svg" alt="">
+            <img  class="size3" src="./assets/Vector-2.svg" alt="">
+        </div>
+    </footer>
+   
+   <script type="text/javascript"> 
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        // To move text 
+
+        window.addEventListener('scroll',()=>{
+        document.getElementById('move').style.left = Math.max(100 - 0.2*window.scrollY, 1) + "vw";
+        console.log(scrollY)
+        if(scrollY > 350){
+            document.getElementById('move').style.opacity = 0;
+        }
+        else{
+            document.getElementById('move').style.opacity = 1;
+        }
+        })
+
+        window.addEventListener('scroll',()=>{
+        document.getElementById('moveright').style.right = Math.max(100 - 0.2*window.scrollY, 1) + "vw";
+        console.log(scrollY)
+        if(scrollY > 350){
+            document.getElementById('moveright').style.opacity = 0;
+        }
+        else{
+            document.getElementById('moveright').style.opacity = 1;
+        }
+        })
+        
+        
+
+    </script>
+
+
+</body>
+
+</html>

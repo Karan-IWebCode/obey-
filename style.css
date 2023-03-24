@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+body,
+html,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    /* overflow-x: hidden; */
+
+}
+
+/* section{
+    padding: 60px 15px 60px 15px;
+} */
+
+body {
+    background-color: #1E1E1E !important;
+    max-width: 100vw;
+}
+
+
+/* Head Section */
+.heroHeading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 84px;
+    line-height: 84px;
+    text-transform: uppercase;
+    color:white;
+    
+}
+
+.left-Right{
+    transform: translateX(200);
+}
+.block{
+    margin: 192px 0px 240px;
+}
+.fontPro{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 48px;
+color: #C4C4C4;
+padding-bottom: 100px;
+}
+
+.fontSec{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 84px;
+
+color: #F8F8F8;
+}
+
+.fontPad{
+    margin-bottom: 59px;
+}
+
+.size1{
+    height: 27px;
+    width: 27px;
+    margin-right: 86px;
+}
+
+.size2{
+    height: 28px;
+    width: 15px;
+    margin-right: 86px;
+}
+
+.size3{
+    height: 28px;
+    width: 28px;
+}
+.block2{
+    height:58px;
+    background: #040404;
+    border: 0.2px solid #CBCBCB;
+}
+.block3{
+    height:70px;
+    background:#1E1E1E;
+    
+}
+
+.bgPrimary{
+    background-color:#1E1E1E;
+}
+.bgSecondary{
+    background-color: #000000;
+}
+.bgClass{
+    /* left:20%; */
+    bottom:20%;
+    background: url('./assets/CircleBg.png');
+    height: 1300px;
+    background-repeat: no-repeat;
+}
+
+.hug{
+    width:54px;
+    height: 30px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(230px);
+    opacity: 0;
+    transition: all 1.1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Section 5 */
+.block5{
+    margin-top:65px;
+    margin-bottom: 80px;
+}
+
+/* Section 6 */
+.block6{
+    
+    margin-bottom: 80px;
+}
+
+/* Section 6 */
+.block7{
+    margin-top:111px;
+    margin-bottom: 340px;
+}
+/* Section 7 */
+
+.blackbox{
+    height:807px;
+}
+.wrapper{
+    position: relative;
+    height: 270px;
+}
+.buttonClass{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 21px;
+    width: 425px;
+    height: 106px;
+    background: #F4BC4F;
+    border: 1px solid rgba(21, 21, 21, 0.1);
+    border-radius: 2px;
+}
+.outer-btn{
+    height: 110px;
+    width: 427px;
+    border: 2px solid white;
+    margin: 0 auto;
+    top: 106px;
+    rotate: -2deg;
+    z-index: -1;
+    position: relative;
+}
